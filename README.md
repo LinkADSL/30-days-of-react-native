@@ -10,37 +10,55 @@ This project is inspired by
 
 30DaysofSwift (https://github.com/allenwong/30DaysofSwift)
 
-## Upgrade to RN@0.34
+## Upgrade to RN@0.34 & compatible with Xcode 8
 
-This is a branch under development to upgrade RN to v0.40 & compatible with Xcode 8. 
-
-## Change
-
-1. Remove cocoapodes & libraries that do not support Andriod
-2. Use Navigator instead of NavigatorIOS
+ Branch development is under development for upgrading RN to v0.34 & supporting Xcode 8. 
 
 ## Installation
-Require node.js, npm install -g react-native-cli , xcode
+Require node.js (v5.x), npm install -g react-native-cli , xcode & cocoapods
 
 \#1  `$ npm install`
 
 IOS
 
-\#2  run ios/ThirtyDaysOfReactNative.xcodeproj
+\#2  run ios/ThirtyDaysOfReactNative.xcworkspace
 
-Android
+Android (Since most of the plugins/libraries I used are compatible with IOS only. Majority of the days are not supported yet. PR welcomed. https://github.com/fangwei716/30-days-of-react-native/tree/android-v0.0.1)
 
-\# TODO
+\#2  `$ react-native run-android`
 
-## Compatibility
+If error occurs during npm install, you can also download the node_modules folder directly from branch with_node_modules.
 
-Not tested yet. 
+##ToDO
 
-## Running on Device
+\#1  Add Android Support.
+ 
+\#2  ~~iPhone Compatibility~~.
+
+\#3  Add OSX Support. (https://github.com/ptmt/react-native-desktop)
+
+\#4  Add UWP Support when it is released. (https://blogs.windows.com/buildingapps/2016/04/13/react-native-on-the-universal-windows-platform/)
+
+##Compatibility
+
+Compatible with iPhone 4/4s, 5/5s, 6/6s, 6+/6s+.
+
+##Running on Device
 
 https://facebook.github.io/react-native/docs/running-on-device-ios.html#content
 
-## Known Bugs
+##Known Bugs
+
+\#1  A warning occurs from package react-native-swiper 
+
+Solution here:
+https://github.com/leecade/react-native-swiper/pull/113/commits/e681a8e5f347efbf10b445647321b1f0865e31a4
+
+##A Complete Example
+
+You can also check out a complete React Native Example of mine. 
+
+https://github.com/fangwei716/gene-task-runner
 
 ## Day 1
 An IOS-system-like stop watch.
@@ -62,7 +80,13 @@ The Twitter app entrance animation.
 ![day3](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day3.gif)
 
 ## Day 4
-TO BE UPDATED
+Using CocoaPods with React Native.
+
+An example with JTSImageViewController.
+
+Reference: https://shift.infinite.red/beginner-s-guide-to-using-cocoapods-with-react-native-46cb4d372995#.z6ooi3o0t
+
+![day4](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day4.gif)
 
 ## Day 5
 MapView and find Geo location.
@@ -70,7 +94,9 @@ MapView and find Geo location.
 ![day5](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day5.gif)
 
 ## Day 6
-TO BE UPDATED
+Spotify welcome screen/
+
+![day6](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day6.gif)
 
 ## Day 7
 Pan gesture basic. Move a baseball around.
@@ -100,7 +126,11 @@ Reference: https://github.com/ProjectSeptemberInc/gl-react-native
 ![day11](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day11.gif)
 
 ## Day 12
-TO BE UPDATED
+Charts with React native 
+
+Reference: https://github.com/tomauty/react-native-chart
+
+![day12](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day12.gif)
 
 ## Day 13
 A tweet UI
@@ -115,7 +145,9 @@ Reference:https://github.com/meteor-factory/react-native-tinder-swipe-cards
 ![day14](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day14.gif)
 
 ## Day 15
-TO BE UPDATED
+A time picker
+
+![day15](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day15.gif)
 
 ## Day 16
 Unlock with gesture
@@ -172,10 +204,16 @@ Reference: https://github.com/brentvatne/react-native-scrollable-tab-view
 ![day24](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day24.gif)
 
 ## Day 25
-TO BE UPDATED
+Custome in-app browser
+
+Reference: https://github.com/d-a-n/react-native-webbrowser
+
+![day25](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day25.gif)
 
 ## Day 26
-TO BE UPDATED
+Swipe and Switch
+
+![day26](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day26.gif)
 
 ## Day 27
 iMessage Gradient. The chat bubble changes its gradient color with its pageY.
@@ -190,13 +228,14 @@ iMessage Image Picker.
 ![day28](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day28.gif)
 
 ## Day 29
-TO BE UPDATED
+Quick action with 3D Touch. Quick action on launching days.
+
+![day29](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day29.gif)
 
 ## Day 30
 Push Notification.
 
 ![day30](https://raw.githubusercontent.com/fangwei716/ThirtyDaysOfReactNative/screenshots/screenshot/day30.gif)
-
 
 ## License
 
